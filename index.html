@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Styles</title>
+    <!-- <link rel="stylesheet" href="css/all.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h2 id="heading">Note Manager</h2>
+            <form id="search-note">
+                <input type="text" placeholder="Search-note...">
+            </form>
+        </header>
+        <div class="note-list">
+            <ul id="list">
+                <li>
+                    <p>First Note</p>
+                    <p>
+                        <i class="fa fa-solid fa-pen-to-square"></i><i class="fa fa-times"></i>
+                    </p>
+                    <input class="edit-note" type="text">
+                </li>
+                <li>
+                    <p>Second Note</p>
+                    <p>
+                        <i class="fa fa-solid fa-pen-to-square"></i><i class="fa fa-times"></i>
+                    </p>
+                    <input class="edit-note" type="text">
+                </li>
+                <li>
+                    <p>Third Note</p>
+                    <p>
+                        <i class="fa fa-solid fa-pen-to-square"></i><i class="fa fa-times"></i>
+                    </p>
+                    <input class="edit-note" type="text">
+                </li>
+            </ul>
+        </div>
+        <div id="hide-list">
+            <label for="hide" id="hidde">Hide notes</label>
+            <input type="checkbox" id="hide" />
+        </div>
+        <div id="add-notes">
+            <form id="add">
+                <input type="text" placeholder="Add a note..." id="add-input" />
+                <input type="submit" value="Add" id="add-btn">
+            </form>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
